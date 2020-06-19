@@ -1,0 +1,16 @@
+net: "/home/kong/caffe/ImageNet/resnet18/train.prototxt"
+test_iter: 2000
+test_interval: 2000
+base_lr: 0.01
+display: 50
+lr_policy: "step"
+gamma: 0.8
+stepsize: 40000
+max_iter: 1200000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 2000
+snapshot_prefix: "/home/kong/caffe/ImageNet/resnet18/weights"
+random_seed: 0
+test_initialization: false
+solver_mode: GPU
